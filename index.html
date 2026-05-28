@@ -570,7 +570,7 @@
 <div class="page-header">
   <div class="page-tag">// PROTÓTIPO INTERATIVO · GRUPO 02 · GESTALT</div>
   <h1 class="page-title">FinTrack · App de Controle Financeiro</h1>
-  <p class="page-sub">4 telas mobile aplicando Proximidade, Semelhança e Continuidade. <strong>Clique nos elementos</strong> para navegar entre as telas.</p>
+  <p class="page-sub">4 telas mobile aplicando Proximidade, Semelhança e Continuidade.</p>
 </div>
 
 <div class="screens-row">
@@ -798,7 +798,6 @@
 </div>
 
 <div class="legend">
-  <p>Use as setas ou role horizontalmente para ver todas as telas. <strong>Clique nos elementos verdes</strong> (botão "ENTRAR", transação "Mercado Central", aba "Perfil", botão "←") para navegar entre as telas.</p>
 
   <div class="legend-grid">
     <div class="legend-card">
@@ -824,19 +823,19 @@
   </div>
 </div>
 
-<script>
+ <script>
   // Navegação entre as telas (todas as telas espelham a navegação no device 2 e 3)
-  function goTo(screen) {
+  // function goTo(screen) {
     // Em qual device estamos? O onclick veio do device-1 (welcome) ou 2/3/4...
     // Pra UX clara: o "ENTRAR" e similar trocam a tela DO MESMO device.
-    const event = window.event;
-    const device = event.target.closest('.device');
-    if (device) {
-      device.setAttribute('data-active', screen);
+    // const event = window.event;
+    //const device = event.target.closest('.device');
+    // if (device) {
+      // device.setAttribute('data-active', screen);
       // scroll suave pra ver o device clicado
-      device.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-    }
-  }
+      // device.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    // }
+  // }
 </script>
 
 </body>
